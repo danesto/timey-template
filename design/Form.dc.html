@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: #2b2b2b; } a:hover { color: #000; }
+  </style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column;">
+
+  <div style="padding: 18px 20px; border-bottom: 2px solid #2b2b2b; display: flex; align-items: center; min-height: 44px;">
+    <div style="font-size: 14px; color: #78787a;">&larr; Nazad</div>
+  </div>
+
+  <div style="padding: 20px 20px 8px;">
+    <div style="font-size: 22px; font-weight: 700;">Tvoji podaci</div>
+  </div>
+
+  <div style="margin: 8px 20px 0; border: 2px solid #2b2b2b; background: #fff; padding: 14px; display: flex; flex-direction: column; gap: 10px;">
+    <div style="display: flex; gap: 12px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Usluga</div>
+      <div style="font-size: 14px; font-weight: 600;">Šišanje &middot; 45 min</div>
+    </div>
+    <div style="display: flex; gap: 12px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Termin</div>
+      <div style="font-size: 14px; font-weight: 600;">pet, 18. sep &middot; 10:00–10:45</div>
+    </div>
+    <div style="display: flex; gap: 12px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Berberin</div>
+      <div style="font-size: 14px; font-weight: 600;">Miloš Rakić</div>
+    </div>
+    <div style="display: flex; gap: 12px; border-top: 1.5px solid #ececea; padding-top: 10px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Cena</div>
+      <div style="font-size: 14px; font-weight: 600;">1.500 RSD</div>
+    </div>
+  </div>
+
+  <div style="padding: 20px 20px 0; display: flex; flex-direction: column; gap: 16px;">
+
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <div style="font-size: 13px;">Ime i prezime <span style="color: #78787a;">*</span></div>
+      <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; padding: 0 12px; font-size: 14px; color: #c8c8c6;">Petar Petrović</div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <div style="font-size: 13px;">Email <span style="color: #78787a;">*</span></div>
+      <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; padding: 0 12px; font-size: 14px; color: #c8c8c6;">petar@primer.rs</div>
+      <div style="font-size: 11px; color: #78787a;">Na njega stiže link za otkazivanje.</div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <div style="font-size: 13px;">Napomena <span style="color: #78787a;">— opciono</span></div>
+      <div style="height: 76px; border: 1.5px solid #b8b8b6; background: #fff; padding: 12px; font-size: 14px; color: #c8c8c6;">Fade sa strane, gore duže.</div>
+    </div>
+
+  </div>
+
+  <div style="margin-top: auto; padding: 16px 20px 22px; display: flex; flex-direction: column; gap: 12px;">
+    <div style="height: 52px; background: #2b2b2b; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600;">Rezerviši termin</div>
+    <div style="font-family: Caveat, system-ui, sans-serif; font-size: 17px; color: #6b6b6d; line-height: 1.25;">
+      POST /api/bookings — vraća token
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Timey
 
-## Getting Started
+A booking system for a small service business — a salon with a few staff, a
+few services, and opening hours that differ from day to day.
 
-First, run the development server:
+A customer picks a service, sees the free slots and books one. There is no
+account: after booking they get a link containing a token, which is how they
+later reschedule or cancel.
+
+**Read [docs/boundaries.md](./docs/boundaries.md) first** — it says what you
+build and what is already here.
+
+## Tech stack
+
+| | |
+|---|---|
+| Framework | Next.js 16, App Router |
+| Language | TypeScript |
+| Styling | Tailwind CSS 4 |
+| Database | SQLite over libSQL |
+| ORM and migrations | Drizzle |
+| Validation | Zod |
+| Package manager | Bun |
+
+Libraries for state, forms and dates are your call. That is one of the
+decisions you will be asked to justify.
+
+## Running it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun install
+cp .env.example .env
+bun run db:migrate    # creates local.db from the migrations
+bun run db:seed       # fills it with a salon, services and a few bookings
+bun run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app runs on `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Database commands
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | What it does |
+|---|---|
+| `bun run db:migrate` | applies migrations |
+| `bun run db:seed` | wipes the data and writes the seed |
+| `bun run db:reset` | drops the database, recreates and refills it |
+| `bun run db:studio` | opens Drizzle Studio to browse the tables |
+| `bun run db:generate` | creates a migration from a changed schema |
 
-## Learn More
+When the data gets tangled, `bun run db:reset` puts you back on clean ground.
 
-To learn more about Next.js, take a look at the following resources:
+## Folder layout
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The tree is organised **by domain, not by file type**. Everything about
+booking sits together instead of being scattered across `components/`,
+`hooks/` and `utils/`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+app/                    routing, nothing else
+  api/                  the API the app consumes      ← off limits
+  layout.tsx            root layout
+  page.tsx
 
-## Deploy on Vercel
+components/             shared components with no domain knowledge
+  ui/                   button, input, modal
+  layout/               navigation, footer
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+features/               domain modules
+  booking/
+    components/         components specific to booking
+    hooks/              client state
+    lib/                display helpers
+    services/           API calls and data shaping
+    schemas.ts          Zod schemas
+    server/             API logic                     ← off limits
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+lib/                    shared foundations
+  api/                  response helpers
+  db/                   schema, migrations, seed      ← off limits
+  time.ts               server-side timezone maths    ← off limits
+
+docs/                   project documentation
+```
+
+When you cannot place something: if it only serves booking, it belongs in
+`features/booking/`. If it would work in a different app too, it belongs in
+`components/ui/` or `lib/`.
+
+## Where the schema lives
+
+`lib/db/schema.ts`. Seven tables: the business, staff,
+services, the link between services and staff, working hours, time off and
+bookings.
+
+Two conventions are worth knowing:
+
+- **Instants** are stored as UTC seconds
+- **Times of day**, such as working hours, are stored as minutes from local
+  midnight in the salon's timezone — "we open at nine" does not move when the
+  clocks do
+
+Migrations live in `lib/db/migrations/` and are committed to the repository.
+
+## Documentation
+
+- [What you build and what you get](./docs/boundaries.md)
+- [API overview](./docs/api.md), with the live reference at `/docs`
