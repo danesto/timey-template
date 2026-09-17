@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: #2b2b2b; } a:hover { color: #000; }
+  </style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column;">
+
+  <div style="padding: 18px 20px; border-bottom: 2px solid #2b2b2b; min-height: 44px; display: flex; align-items: center;">
+    <div style="font-size: 15px; font-weight: 700;">Brica Barbershop</div>
+  </div>
+
+  <div style="padding: 22px 20px 0; display: flex; flex-direction: column; gap: 6px;">
+    <div style="font-size: 22px; font-weight: 700;">Tvoj termin</div>
+    <div style="font-size: 13px; color: #78787a;">Zakazano 17. septembra</div>
+  </div>
+
+  <div style="margin: 16px 20px 0; border: 2px solid #2b2b2b; background: #fff; padding: 16px; display: flex; flex-direction: column; gap: 12px;">
+    <div style="display: flex; gap: 12px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Kada</div>
+      <div style="font-size: 15px; font-weight: 600;">petak, 18. septembar<br>10:00–10:45</div>
+    </div>
+    <div style="display: flex; gap: 12px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Šta</div>
+      <div style="font-size: 14px;">Šišanje &middot; 1.500 RSD</div>
+    </div>
+    <div style="display: flex; gap: 12px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Kod koga</div>
+      <div style="font-size: 14px;">Miloš Rakić</div>
+    </div>
+    <div style="display: flex; gap: 12px; border-top: 1.5px solid #ececea; padding-top: 10px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Na ime</div>
+      <div style="font-size: 14px;">Petar Petrović</div>
+    </div>
+  </div>
+
+  <div style="padding: 22px 20px 0; display: flex; flex-direction: column; gap: 12px;">
+    <div style="height: 50px; border: 2px solid #2b2b2b; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600;">Pomeri termin</div>
+    <div style="height: 50px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 15px; color: #78787a;">Otkaži termin</div>
+  </div>
+
+  <div style="margin: 16px 20px 0; border-left: 3px solid #b8b8b6; padding-left: 12px; display: flex; flex-direction: column; gap: 4px;">
+    <div style="font-size: 12px; color: #78787a; line-height: 1.5;">
+      Otkazivanje je moguće najkasnije 2 sata pre termina. Posle toga su oba dugmeta ugašena.
+    </div>
+  </div>
+
+  <div style="margin: 22px 20px 0; border: 1.5px dashed #b8b8b6; background: #ececea; padding: 14px; display: flex; flex-direction: column; gap: 6px;">
+    <div style="font-size: 12px; color: #78787a;">STANJE: OTKAZANO</div>
+    <div style="font-size: 13px; line-height: 1.5;">Termin je otkazan. Dugmad nestaje, ostaje samo poziv da se zakaže novi.</div>
+  </div>
+
+  <div style="margin-top: auto; padding: 16px 20px 22px; display: flex; flex-direction: column; gap: 5px;">
+    <div style="font-family: Caveat, system-ui, sans-serif; font-size: 17px; color: #6b6b6d; line-height: 1.25;">
+      GET /api/bookings/{token} — 404 ako ne postoji
+    </div>
+    <div style="font-family: Caveat, system-ui, sans-serif; font-size: 17px; color: #6b6b6d; line-height: 1.25;">
+      rok za otkazivanje iz /api/business
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

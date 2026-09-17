@@ -1,0 +1,1019 @@
+<!doctype html>
+<html lang="sr-Latn-RS">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Timey — skice ekrana</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #e8e8e5;
+      color: #2b2b2b;
+      font-family: system-ui, sans-serif;
+      padding: 40px 32px 80px;
+    }
+    header { max-width: 760px; margin: 0 auto 48px; }
+    h1 { font-size: 28px; margin: 0 0 12px; }
+    header p { font-size: 14px; line-height: 1.6; color: #5a5a5c; margin: 0 0 8px; }
+    nav { display: flex; gap: 16px; margin-top: 20px; }
+    nav a { font-size: 14px; color: #2b2b2b; }
+    section { max-width: 1400px; margin: 0 auto 64px; }
+    h2 { font-size: 20px; margin: 0 0 6px; }
+    .note { font-size: 13px; color: #5a5a5c; margin: 0 0 24px; }
+    .frames { display: flex; flex-direction: column; gap: 40px; }
+    .frame { margin: 0; }
+    figcaption {
+      font-size: 13px; color: #5a5a5c; margin-bottom: 10px;
+      font-variant-numeric: tabular-nums;
+    }
+    .stage {
+      display: inline-block; overflow: auto; max-width: 100%;
+      border: 1px solid #c8c8c6; background: #f4f4f2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Timey — skice ekrana</h1>
+    <p>Namerno sive i grube. Raspored, hijerarhija i to koji podatak stoji gde su odluka; boje, tipografija i vizuelni jezik nisu.</p>
+    <p>Uz svaki ekran, sa strane, stoji koji ga poziv hrani.</p>
+    <nav>
+      <a href="#desktop">Desktop</a>
+      <a href="#telefon">Telefon</a>
+    </nav>
+  </header>
+    <section id="desktop">
+      <h2>Desktop</h2>
+      <p class="note">1120 × 760 — mali laptop, ne pun ekran.</p>
+      <div class="frames">
+      <figure class="frame">
+        <figcaption>1 · Izbor usluge</figcaption>
+        <div class="stage"><div style="width: 1120px; height: 760px; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column;">
+
+  <div style="padding: 20px 32px; border-bottom: 2px solid #2b2b2b; display: flex; align-items: center; gap: 16px; background: #fff;">
+    <div style="font-size: 17px; font-weight: 700;">Brica Barbershop</div>
+    <div style="font-size: 13px; color: #78787a;">Zakazivanje termina</div>
+    <div style="flex-grow: 1;"></div>
+    <div style="font-size: 13px; color: #78787a;">Korak 1 od 3</div>
+  </div>
+
+  <div style="flex-grow: 1; padding: 36px 32px; display: flex; justify-content: center;">
+    <div style="width: 680px; display: flex; flex-direction: column; gap: 20px;">
+
+      <div style="display: flex; flex-direction: column; gap: 6px;">
+        <div style="font-size: 26px; font-weight: 700;">Izaberi uslugu</div>
+        <div style="font-size: 13px; color: #78787a;">Trajanje uključuje pripremu i sređivanje posle.</div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+
+        <div style="border: 2px solid #2b2b2b; background: #fff; padding: 18px 20px; display: flex; gap: 20px; align-items: center; min-height: 44px;">
+          <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px;">
+            <div style="font-size: 17px; font-weight: 600;">Šišanje</div>
+            <div style="font-size: 13px; color: #78787a;">Klasično šišanje sa pranjem i oblikovanjem.</div>
+          </div>
+          <div style="width: 84px; text-align: right; font-size: 13px; color: #78787a;">45 min</div>
+          <div style="width: 110px; text-align: right; font-size: 16px; font-weight: 600;">1.500 RSD</div>
+        </div>
+
+        <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 18px 20px; display: flex; gap: 20px; align-items: center; min-height: 44px;">
+          <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px;">
+            <div style="font-size: 17px; font-weight: 600;">Brijanje</div>
+            <div style="font-size: 13px; color: #78787a;">Brijanje britvom, uz toplu oblogu.</div>
+          </div>
+          <div style="width: 84px; text-align: right; font-size: 13px; color: #78787a;">30 min</div>
+          <div style="width: 110px; text-align: right; font-size: 16px; font-weight: 600;">1.200 RSD</div>
+        </div>
+
+        <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 18px 20px; display: flex; gap: 20px; align-items: center; min-height: 44px;">
+          <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px;">
+            <div style="font-size: 17px; font-weight: 600;">Oblikovanje brade</div>
+            <div style="font-size: 13px; color: #78787a;">Skraćivanje i oblikovanje, sa negom.</div>
+          </div>
+          <div style="width: 84px; text-align: right; font-size: 13px; color: #78787a;">30 min</div>
+          <div style="width: 110px; text-align: right; font-size: 16px; font-weight: 600;">900 RSD</div>
+        </div>
+
+        <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 18px 20px; display: flex; gap: 20px; align-items: center; min-height: 44px;">
+          <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px;">
+            <div style="font-size: 17px; font-weight: 600;">Šišanje i brada</div>
+            <div style="font-size: 13px; color: #78787a;">Celo sređivanje, kosa i brada zajedno.</div>
+          </div>
+          <div style="width: 84px; text-align: right; font-size: 13px; color: #78787a;">75 min</div>
+          <div style="width: 110px; text-align: right; font-size: 16px; font-weight: 600;">2.200 RSD</div>
+        </div>
+
+      </div>
+
+      <div style="font-family: Caveat, system-ui, sans-serif; font-size: 18px; color: #6b6b6d; line-height: 1.25;">
+        GET /api/services — cena je priceCents / 100
+      </div>
+
+    </div>
+  </div>
+
+</div></div>
+      </figure>
+      <figure class="frame">
+        <figcaption>2 · Izbor berberina</figcaption>
+        <div class="stage"><div style="width: 1120px; height: 760px; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column;">
+
+  <div style="padding: 20px 32px; border-bottom: 2px solid #2b2b2b; display: flex; align-items: center; gap: 20px; background: #fff;">
+    <div style="font-size: 14px; color: #78787a; min-height: 44px; display: flex; align-items: center;">&larr; Nazad</div>
+    <div style="border: 1.5px dashed #b8b8b6; background: #f4f4f2; padding: 8px 14px; display: flex; gap: 10px; align-items: baseline;">
+      <div style="font-size: 14px; font-weight: 600;">Šišanje</div>
+      <div style="font-size: 12px; color: #78787a;">45 min &middot; 1.500 RSD</div>
+    </div>
+    <div style="flex-grow: 1;"></div>
+    <div style="font-size: 13px; color: #78787a;">Korak 2 od 3</div>
+  </div>
+
+  <div style="flex-grow: 1; padding: 36px 32px; display: flex; justify-content: center;">
+    <div style="width: 820px; display: flex; flex-direction: column; gap: 22px;">
+
+      <div style="display: flex; flex-direction: column; gap: 6px;">
+        <div style="font-size: 26px; font-weight: 700;">Kod koga?</div>
+        <div style="font-size: 13px; color: #78787a;">Vuk Đorđević se ne pojavljuje — ne radi šišanje.</div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;">
+
+        <div style="border: 2px solid #2b2b2b; background: #fff; padding: 20px; display: flex; flex-direction: column; gap: 14px; min-height: 200px;">
+          <div style="width: 56px; height: 56px; border: 1.5px solid #b8b8b6; background: #ececea;"></div>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <div style="font-size: 17px; font-weight: 600;">Svejedno mi je</div>
+            <div style="font-size: 13px; color: #78787a; line-height: 1.5;">Najraniji slobodan termin, ko god bude slobodan.</div>
+          </div>
+        </div>
+
+        <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 20px; display: flex; flex-direction: column; gap: 14px; min-height: 200px;">
+          <div style="width: 56px; height: 56px; border: 1.5px solid #b8b8b6; background: #ececea;"></div>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <div style="font-size: 17px; font-weight: 600;">Miloš Rakić</div>
+            <div style="font-size: 13px; color: #78787a; line-height: 1.5;">berberin<br>pon–pet 09–17, sub 09–14</div>
+          </div>
+        </div>
+
+        <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 20px; display: flex; flex-direction: column; gap: 14px; min-height: 200px;">
+          <div style="width: 56px; height: 56px; border: 1.5px solid #b8b8b6; background: #ececea;"></div>
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <div style="font-size: 17px; font-weight: 600;">Stefan Ilić</div>
+            <div style="font-size: 13px; color: #78787a; line-height: 1.5;">berberin<br>pon–pet 11–19, sub 09–14</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 5px;">
+        <div style="font-family: Caveat, system-ui, sans-serif; font-size: 18px; color: #6b6b6d; line-height: 1.25;">
+          GET /api/staff — filtrira se po serviceIds
+        </div>
+        <div style="font-family: Caveat, system-ui, sans-serif; font-size: 18px; color: #6b6b6d; line-height: 1.25;">
+          „Svejedno mi je“ = poziv bez staffId
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div></div>
+      </figure>
+      <figure class="frame">
+        <figcaption>3 · Datum i termin</figcaption>
+        <div class="stage"><div style="width: 1120px; height: 760px; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column;">
+
+  <div style="padding: 20px 32px; border-bottom: 2px solid #2b2b2b; display: flex; align-items: center; gap: 20px; background: #fff;">
+    <div style="font-size: 14px; color: #78787a; min-height: 44px; display: flex; align-items: center;">&larr; Nazad</div>
+    <div style="border: 1.5px dashed #b8b8b6; background: #f4f4f2; padding: 8px 14px; display: flex; gap: 10px; align-items: baseline;">
+      <div style="font-size: 14px; font-weight: 600;">Šišanje</div>
+      <div style="font-size: 12px; color: #78787a;">45 min &middot; svejedno ko</div>
+    </div>
+    <div style="flex-grow: 1;"></div>
+    <div style="font-size: 13px; color: #78787a;">Korak 3 od 3</div>
+  </div>
+
+  <div style="flex-grow: 1; padding: 28px 32px; display: flex; justify-content: center;">
+    <div style="width: 960px; display: flex; flex-direction: column; gap: 16px;">
+
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px;">
+
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="font-size: 20px; font-weight: 700; flex-grow: 1;">septembar 2026</div>
+            <div style="width: 44px; height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 15px;">&lsaquo;</div>
+            <div style="width: 44px; height: 44px; border: 1.5px solid #2b2b2b; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 15px;">&rsaquo;</div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px;">
+            <div style="font-size: 11px; color: #78787a; text-align: center; padding: 4px 0;">P</div>
+            <div style="font-size: 11px; color: #78787a; text-align: center; padding: 4px 0;">U</div>
+            <div style="font-size: 11px; color: #78787a; text-align: center; padding: 4px 0;">S</div>
+            <div style="font-size: 11px; color: #78787a; text-align: center; padding: 4px 0;">Č</div>
+            <div style="font-size: 11px; color: #78787a; text-align: center; padding: 4px 0;">P</div>
+            <div style="font-size: 11px; color: #78787a; text-align: center; padding: 4px 0;">S</div>
+            <div style="font-size: 11px; color: #78787a; text-align: center; padding: 4px 0;">N</div>
+
+            <div style="height: 44px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #c8c8c6;">14</div>
+            <div style="height: 44px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #c8c8c6;">15</div>
+            <div style="height: 44px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #c8c8c6;">16</div>
+            <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">17</div>
+            <div style="height: 44px; border: 2px solid #2b2b2b; background: #2b2b2b; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600;">18</div>
+            <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">19</div>
+            <div style="height: 44px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #c8c8c6;">20</div>
+
+            <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">21</div>
+            <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">22</div>
+            <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">23</div>
+            <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">24</div>
+            <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">25</div>
+            <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">26</div>
+            <div style="height: 44px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #c8c8c6;">27</div>
+          </div>
+
+          <div style="display: flex; gap: 18px; align-items: center;">
+            <div style="display: flex; gap: 6px; align-items: center;">
+              <div style="width: 12px; height: 12px; border: 1.5px solid #b8b8b6; background: #fff;"></div>
+              <div style="font-size: 11px; color: #78787a;">ima termina</div>
+            </div>
+            <div style="display: flex; gap: 6px; align-items: center;">
+              <div style="width: 12px; height: 12px; border: 1.5px solid #ececea; background: #f4f4f2;"></div>
+              <div style="font-size: 11px; color: #78787a;">popunjeno ili zatvoreno</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div style="font-size: 20px; font-weight: 700; min-height: 44px; display: flex; align-items: center;">petak, 18. septembar</div>
+
+          <div style="font-size: 11px; color: #78787a;">PRE PODNE</div>
+          <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px;">
+            <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">09:00</div>
+            <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">09:15</div>
+            <div style="height: 46px; border: 2px solid #2b2b2b; background: #2b2b2b; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600;">10:00</div>
+            <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">10:15</div>
+            <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">11:00</div>
+            <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">11:15</div>
+            <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">11:30</div>
+            <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">11:45</div>
+          </div>
+
+          <div style="font-size: 11px; color: #78787a; padding-top: 2px;">POSLE PODNE</div>
+          <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px;">
+            <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">13:00</div>
+            <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">14:30</div>
+            <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">16:00</div>
+            <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">17:15</div>
+          </div>
+
+          <div style="border-left: 3px solid #b8b8b6; padding-left: 14px;">
+            <div style="font-size: 12px; color: #78787a; line-height: 1.5;">Izabrani termin nosi i ko je slobodan. Ako ih je više, bira se ovde ili se uzima prvi.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="display: flex; gap: 28px;">
+        <div style="font-family: Caveat, system-ui, sans-serif; font-size: 18px; color: #6b6b6d; line-height: 1.25;">
+          sivi dani = /api/availability/days, jedan poziv za ceo mesec
+        </div>
+        <div style="font-family: Caveat, system-ui, sans-serif; font-size: 18px; color: #6b6b6d; line-height: 1.25;">
+          termini = /api/availability?date=… — svaki ima staffIds
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div></div>
+      </figure>
+      <figure class="frame">
+        <figcaption>4 · Podaci</figcaption>
+        <div class="stage"><div style="width: 1120px; height: 760px; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column;">
+
+  <div style="padding: 20px 32px; border-bottom: 2px solid #2b2b2b; display: flex; align-items: center; gap: 20px; background: #fff;">
+    <div style="font-size: 14px; color: #78787a; min-height: 44px; display: flex; align-items: center;">&larr; Nazad</div>
+    <div style="flex-grow: 1;"></div>
+    <div style="font-size: 13px; color: #78787a;">Poslednji korak</div>
+  </div>
+
+  <div style="flex-grow: 1; padding: 36px 32px; display: flex; justify-content: center;">
+    <div style="width: 880px; display: flex; flex-direction: column; gap: 22px;">
+
+      <div style="font-size: 26px; font-weight: 700;">Tvoji podaci</div>
+
+      <div style="display: grid; grid-template-columns: 340px minmax(0, 1fr); gap: 32px;">
+
+        <div style="border: 2px solid #2b2b2b; background: #fff; padding: 20px; display: flex; flex-direction: column; gap: 14px; align-self: start;">
+          <div style="display: flex; gap: 14px;">
+            <div style="width: 84px; font-size: 12px; color: #78787a;">Usluga</div>
+            <div style="font-size: 14px; font-weight: 600;">Šišanje &middot; 45 min</div>
+          </div>
+          <div style="display: flex; gap: 14px;">
+            <div style="width: 84px; font-size: 12px; color: #78787a;">Termin</div>
+            <div style="font-size: 14px; font-weight: 600;">pet, 18. sept.<br>10:00–10:45</div>
+          </div>
+          <div style="display: flex; gap: 14px;">
+            <div style="width: 84px; font-size: 12px; color: #78787a;">Berberin</div>
+            <div style="font-size: 14px; font-weight: 600;">Miloš Rakić</div>
+          </div>
+          <div style="display: flex; gap: 14px; border-top: 1.5px solid #ececea; padding-top: 14px;">
+            <div style="width: 84px; font-size: 12px; color: #78787a;">Cena</div>
+            <div style="font-size: 14px; font-weight: 600;">1.500 RSD</div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 18px;">
+
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <div style="font-size: 13px;">Ime i prezime <span style="color: #78787a;">*</span></div>
+            <div style="height: 48px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; padding: 0 14px; font-size: 14px; color: #c8c8c6;">Petar Petrović</div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <div style="font-size: 13px;">Email <span style="color: #78787a;">*</span></div>
+            <div style="height: 48px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; padding: 0 14px; font-size: 14px; color: #c8c8c6;">petar@primer.rs</div>
+            <div style="font-size: 11px; color: #78787a;">Na njega stiže link za otkazivanje.</div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 6px;">
+            <div style="font-size: 13px;">Napomena <span style="color: #78787a;">— opciono</span></div>
+            <div style="height: 92px; border: 1.5px solid #b8b8b6; background: #fff; padding: 14px; font-size: 14px; color: #c8c8c6;">Fade sa strane, gore duže.</div>
+          </div>
+
+          <div style="height: 52px; background: #2b2b2b; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600;">Zakaži termin</div>
+
+        </div>
+
+      </div>
+
+      <div style="font-family: Caveat, system-ui, sans-serif; font-size: 18px; color: #6b6b6d; line-height: 1.25;">
+        POST /api/bookings — vraća token
+      </div>
+
+    </div>
+  </div>
+
+</div></div>
+      </figure>
+      <figure class="frame">
+        <figcaption>5 · Potvrda</figcaption>
+        <div class="stage"><div style="width: 1120px; height: 760px; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column;">
+
+  <div style="padding: 20px 32px; border-bottom: 2px solid #2b2b2b; display: flex; align-items: center; background: #fff; min-height: 44px;">
+    <div style="font-size: 17px; font-weight: 700;">Brica Barbershop</div>
+  </div>
+
+  <div style="flex-grow: 1; padding: 44px 32px; display: flex; justify-content: center;">
+    <div style="width: 620px; display: flex; flex-direction: column; gap: 22px;">
+
+      <div style="display: flex; gap: 18px; align-items: center;">
+        <div style="width: 56px; height: 56px; border: 2px solid #2b2b2b; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2b2b2b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 12.5 9.5 18 20 6.5" />
+          </svg>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <div style="font-size: 26px; font-weight: 700;">Termin je zakazan</div>
+          <div style="font-size: 13px; color: #78787a;">Potvrda je poslata na petar@primer.rs</div>
+        </div>
+      </div>
+
+      <div style="border: 2px solid #2b2b2b; background: #fff; padding: 20px; display: flex; flex-direction: column; gap: 14px;">
+        <div style="display: flex; gap: 14px;">
+          <div style="width: 84px; font-size: 12px; color: #78787a;">Kada</div>
+          <div style="font-size: 16px; font-weight: 600;">petak, 18. septembar &middot; 10:00–10:45</div>
+        </div>
+        <div style="display: flex; gap: 14px;">
+          <div style="width: 84px; font-size: 12px; color: #78787a;">Šta</div>
+          <div style="font-size: 14px;">Šišanje &middot; 1.500 RSD</div>
+        </div>
+        <div style="display: flex; gap: 14px;">
+          <div style="width: 84px; font-size: 12px; color: #78787a;">Kod koga</div>
+          <div style="font-size: 14px;">Miloš Rakić</div>
+        </div>
+      </div>
+
+      <div style="border: 1.5px dashed #b8b8b6; background: #ececea; padding: 18px; display: flex; flex-direction: column; gap: 10px;">
+        <div style="font-size: 14px; font-weight: 600;">Sačuvaj ovaj link</div>
+        <div style="font-size: 12px; color: #78787a; line-height: 1.5;">Preko njega kasnije menjaš ili otkazuješ termin. Nema naloga ni lozinke.</div>
+        <div style="display: flex; gap: 12px;">
+          <div style="flex-grow: 1; border: 1.5px solid #b8b8b6; background: #fff; padding: 0 14px; height: 46px; display: flex; align-items: center; font-size: 12px; font-family: ui-monospace, monospace; color: #6b6b6d; overflow: hidden;">brica.rs/termin/wJoOs8uhnzRR3kQ</div>
+          <div style="width: 150px; height: 46px; border: 1.5px solid #2b2b2b; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600;">Kopiraj link</div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 5px;">
+        <div style="font-family: Caveat, system-ui, sans-serif; font-size: 18px; color: #6b6b6d; line-height: 1.25;">
+          token iz odgovora POST-a — jedini put nazad
+        </div>
+        <div style="font-family: Caveat, system-ui, sans-serif; font-size: 18px; color: #6b6b6d; line-height: 1.25;">
+          imena dolaze iz /staff i /services, spojiti
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div></div>
+      </figure>
+      <figure class="frame">
+        <figcaption>6 · Upravljanje terminom</figcaption>
+        <div class="stage"><div style="width: 1120px; height: 760px; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column;">
+
+  <div style="padding: 20px 32px; border-bottom: 2px solid #2b2b2b; display: flex; align-items: center; background: #fff; min-height: 44px;">
+    <div style="font-size: 17px; font-weight: 700;">Brica Barbershop</div>
+  </div>
+
+  <div style="flex-grow: 1; padding: 40px 32px; display: flex; justify-content: center;">
+    <div style="width: 860px; display: flex; flex-direction: column; gap: 22px;">
+
+      <div style="display: flex; flex-direction: column; gap: 6px;">
+        <div style="font-size: 26px; font-weight: 700;">Tvoj termin</div>
+        <div style="font-size: 13px; color: #78787a;">Zakazano 17. septembra</div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 32px;">
+
+        <div style="border: 2px solid #2b2b2b; background: #fff; padding: 20px; display: flex; flex-direction: column; gap: 14px;">
+          <div style="display: flex; gap: 14px;">
+            <div style="width: 84px; font-size: 12px; color: #78787a;">Kada</div>
+            <div style="font-size: 16px; font-weight: 600;">petak, 18. septembar &middot; 10:00–10:45</div>
+          </div>
+          <div style="display: flex; gap: 14px;">
+            <div style="width: 84px; font-size: 12px; color: #78787a;">Šta</div>
+            <div style="font-size: 14px;">Šišanje &middot; 1.500 RSD</div>
+          </div>
+          <div style="display: flex; gap: 14px;">
+            <div style="width: 84px; font-size: 12px; color: #78787a;">Kod koga</div>
+            <div style="font-size: 14px;">Miloš Rakić</div>
+          </div>
+          <div style="display: flex; gap: 14px; border-top: 1.5px solid #ececea; padding-top: 14px;">
+            <div style="width: 84px; font-size: 12px; color: #78787a;">Na ime</div>
+            <div style="font-size: 14px;">Petar Petrović</div>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 12px; align-self: start;">
+          <div style="height: 50px; border: 2px solid #2b2b2b; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600;">Pomeri termin</div>
+          <div style="height: 50px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 15px; color: #78787a;">Otkaži termin</div>
+          <div style="border-left: 3px solid #b8b8b6; padding-left: 14px;">
+            <div style="font-size: 12px; color: #78787a; line-height: 1.5;">Otkazivanje je moguće najkasnije 2 sata pre termina. Posle toga su oba dugmeta ugašena.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="border: 1.5px dashed #b8b8b6; background: #ececea; padding: 18px; display: flex; flex-direction: column; gap: 8px;">
+        <div style="font-size: 12px; color: #78787a;">STANJE: OTKAZANO</div>
+        <div style="font-size: 14px; line-height: 1.5;">Termin je otkazan. Dugmad nestaje, ostaje samo poziv da se zakaže novi.</div>
+      </div>
+
+      <div style="display: flex; gap: 28px;">
+        <div style="font-family: Caveat, system-ui, sans-serif; font-size: 18px; color: #6b6b6d; line-height: 1.25;">
+          GET /api/bookings/{token} — 404 ako ne postoji
+        </div>
+        <div style="font-family: Caveat, system-ui, sans-serif; font-size: 18px; color: #6b6b6d; line-height: 1.25;">
+          rok za otkazivanje iz /api/business
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div></div>
+      </figure>
+      <figure class="frame">
+        <figcaption>Stanja</figcaption>
+        <div class="stage"><div style="width: 1120px; height: 760px; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column; padding: 32px;">
+
+  <div style="font-size: 24px; font-weight: 700; margin-bottom: 20px;">Stanja</div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; flex-grow: 1;">
+
+    <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 18px; display: flex; flex-direction: column; gap: 14px;">
+      <div style="font-size: 11px; color: #78787a;">PRAZAN DAN</div>
+      <div style="font-size: 16px; font-weight: 600;">nedelja, 20. septembar</div>
+      <div style="border: 1.5px dashed #b8b8b6; background: #f4f4f2; padding: 26px 18px; display: flex; flex-direction: column; gap: 8px; align-items: center;">
+        <div style="font-size: 15px; font-weight: 600;">Nema slobodnih termina</div>
+        <div style="font-size: 12px; color: #78787a; text-align: center; line-height: 1.5;">Nedeljom ne radimo.</div>
+      </div>
+      <div style="height: 46px; border: 1.5px solid #2b2b2b; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600;">Prvi slobodan: pon, 21. sept.</div>
+      <div style="font-size: 12px; color: #78787a; line-height: 1.5;">Prazan dan nije greška — ponudi izlaz umesto praznine.</div>
+    </div>
+
+    <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 18px; display: flex; flex-direction: column; gap: 14px;">
+      <div style="font-size: 11px; color: #78787a;">UČITAVANJE</div>
+      <div style="height: 22px; width: 60%; background: #ececea;"></div>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;">
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+      </div>
+      <div style="font-size: 12px; color: #78787a; line-height: 1.5;">Kostur zadržava visinu mreže, da sadržaj ne poskoči kad stigne.</div>
+    </div>
+
+    <div style="border: 2px solid #2b2b2b; background: #fff; padding: 18px; display: flex; flex-direction: column; gap: 14px;">
+      <div style="font-size: 11px; color: #78787a;">TERMIN ZAUZET &mdash; 409</div>
+      <div style="display: flex; gap: 12px; align-items: flex-start;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round" style="flex-shrink: 0; margin-top: 2px;">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 7.5v5.5M12 16.4v.1" />
+        </svg>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <div style="font-size: 15px; font-weight: 600;">Neko je upravo uzeo 10:00</div>
+          <div style="font-size: 12px; color: #78787a; line-height: 1.5;">Termini su osveženi. Izaberi drugi.</div>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;">
+        <div style="height: 46px; background: #ececea; color: #c8c8c6; display: flex; align-items: center; justify-content: center; font-size: 14px; text-decoration: line-through;">10:00</div>
+        <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">10:15</div>
+        <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">11:00</div>
+      </div>
+      <div style="font-size: 12px; color: #78787a; line-height: 1.5;">Isti odgovor stiže i kad optimistički upis treba povući nazad.</div>
+    </div>
+
+  </div>
+
+  <div style="margin-top: 20px; font-family: Caveat, system-ui, sans-serif; font-size: 18px; color: #6b6b6d; line-height: 1.25;">
+    ova tri stanja se najčešće zaborave, a vide se svakog dana
+  </div>
+
+</div></div>
+      </figure>
+      </div>
+    </section>
+    <section id="telefon">
+      <h2>Telefon</h2>
+      <p class="note">390 × 844 — ista hijerarhija, skupljena.</p>
+      <div class="frames">
+      <figure class="frame">
+        <figcaption>1 · Izbor usluge</figcaption>
+        <div class="stage"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column;">
+
+  <div style="padding: 20px 20px 14px; border-bottom: 2px solid #2b2b2b; display: flex; flex-direction: column; gap: 4px;">
+    <div style="font-size: 17px; font-weight: 700;">Brica Barbershop</div>
+    <div style="font-size: 13px; color: #78787a;">Zakazivanje termina</div>
+  </div>
+
+  <div style="padding: 22px 20px 10px; display: flex; flex-direction: column; gap: 6px;">
+    <div style="font-size: 22px; font-weight: 700;">Izaberi uslugu</div>
+    <div style="font-size: 13px; color: #78787a;">Korak 1 od 3</div>
+  </div>
+
+  <div style="padding: 10px 20px; display: flex; flex-direction: column; gap: 12px;">
+
+    <div style="border: 2px solid #2b2b2b; background: #fff; padding: 14px; display: flex; gap: 12px; align-items: flex-start; min-height: 44px;">
+      <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px;">
+        <div style="font-size: 16px; font-weight: 600;">Šišanje</div>
+        <div style="font-size: 12px; color: #78787a; line-height: 1.4;">Klasično šišanje sa pranjem i styling-om.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px; white-space: nowrap;">
+        <div style="font-size: 15px; font-weight: 600;">1.500 RSD</div>
+        <div style="font-size: 12px; color: #78787a;">45 min</div>
+      </div>
+    </div>
+
+    <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 14px; display: flex; gap: 12px; align-items: flex-start; min-height: 44px;">
+      <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px;">
+        <div style="font-size: 16px; font-weight: 600;">Brijanje</div>
+        <div style="font-size: 12px; color: #78787a; line-height: 1.4;">Brijanje britvom, uz toplu oblogu.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px; white-space: nowrap;">
+        <div style="font-size: 15px; font-weight: 600;">1.200 RSD</div>
+        <div style="font-size: 12px; color: #78787a;">30 min</div>
+      </div>
+    </div>
+
+    <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 14px; display: flex; gap: 12px; align-items: flex-start; min-height: 44px;">
+      <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px;">
+        <div style="font-size: 16px; font-weight: 600;">Oblikovanje brade</div>
+        <div style="font-size: 12px; color: #78787a; line-height: 1.4;">Skraćivanje i oblikovanje, sa negom.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px; white-space: nowrap;">
+        <div style="font-size: 15px; font-weight: 600;">900 RSD</div>
+        <div style="font-size: 12px; color: #78787a;">30 min</div>
+      </div>
+    </div>
+
+    <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 14px; display: flex; gap: 12px; align-items: flex-start; min-height: 44px;">
+      <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px;">
+        <div style="font-size: 16px; font-weight: 600;">Šišanje i brada</div>
+        <div style="font-size: 12px; color: #78787a; line-height: 1.4;">Celo sređivanje, kosa i brada zajedno.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px; white-space: nowrap;">
+        <div style="font-size: 15px; font-weight: 600;">2.200 RSD</div>
+        <div style="font-size: 12px; color: #78787a;">75 min</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top: auto; padding: 16px 20px 22px;">
+    <div style="font-family: Caveat, system-ui, sans-serif; font-size: 17px; color: #6b6b6d; line-height: 1.3;">
+      GET /api/services — cena je priceCents / 100
+    </div>
+  </div>
+
+</div></div>
+      </figure>
+      <figure class="frame">
+        <figcaption>2 · Izbor berberina</figcaption>
+        <div class="stage"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column;">
+
+  <div style="padding: 18px 20px; border-bottom: 2px solid #2b2b2b; display: flex; align-items: center; gap: 12px; min-height: 44px;">
+    <div style="font-size: 14px; color: #78787a; min-height: 44px; display: flex; align-items: center; padding-right: 12px;">&larr; Nazad</div>
+    <div style="flex-grow: 1;"></div>
+    <div style="font-size: 13px; color: #78787a;">Korak 2 od 3</div>
+  </div>
+
+  <div style="margin: 16px 20px 0; border: 1.5px dashed #b8b8b6; background: #ececea; padding: 10px 12px; display: flex; gap: 8px; align-items: baseline;">
+    <div style="font-size: 14px; font-weight: 600;">Šišanje</div>
+    <div style="font-size: 12px; color: #78787a;">45 min &middot; 1.500 RSD</div>
+  </div>
+
+  <div style="padding: 20px 20px 10px;">
+    <div style="font-size: 22px; font-weight: 700;">Kod koga?</div>
+  </div>
+
+  <div style="padding: 6px 20px; display: flex; flex-direction: column; gap: 12px;">
+
+    <div style="border: 2px solid #2b2b2b; background: #fff; padding: 14px; display: flex; gap: 12px; align-items: center; min-height: 44px;">
+      <div style="width: 40px; height: 40px; border: 1.5px solid #b8b8b6; background: #ececea; flex-shrink: 0;"></div>
+      <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 2px;">
+        <div style="font-size: 16px; font-weight: 600;">Svejedno mi je</div>
+        <div style="font-size: 12px; color: #78787a;">Najraniji slobodan termin</div>
+      </div>
+    </div>
+
+    <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 14px; display: flex; gap: 12px; align-items: center; min-height: 44px;">
+      <div style="width: 40px; height: 40px; border: 1.5px solid #b8b8b6; background: #ececea; flex-shrink: 0;"></div>
+      <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 2px;">
+        <div style="font-size: 16px; font-weight: 600;">Miloš Rakić</div>
+        <div style="font-size: 12px; color: #78787a;">berberin &middot; pon–pet 09–17, sub 09–14</div>
+      </div>
+    </div>
+
+    <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 14px; display: flex; gap: 12px; align-items: center; min-height: 44px;">
+      <div style="width: 40px; height: 40px; border: 1.5px solid #b8b8b6; background: #ececea; flex-shrink: 0;"></div>
+      <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 2px;">
+        <div style="font-size: 16px; font-weight: 600;">Stefan Ilić</div>
+        <div style="font-size: 12px; color: #78787a;">berberin &middot; pon–pet 11–19, sub 09–14</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin: 18px 20px 0; border-left: 3px solid #b8b8b6; padding-left: 12px;">
+    <div style="font-size: 12px; color: #78787a; line-height: 1.5;">
+      Vuk Đorđević se ovde ne pojavljuje — ne radi šišanje.
+    </div>
+  </div>
+
+  <div style="margin-top: auto; padding: 16px 20px 22px; display: flex; flex-direction: column; gap: 6px;">
+    <div style="font-family: Caveat, system-ui, sans-serif; font-size: 17px; color: #6b6b6d; line-height: 1.3;">
+      GET /api/staff — filtrira se po serviceIds
+    </div>
+    <div style="font-family: Caveat, system-ui, sans-serif; font-size: 17px; color: #6b6b6d; line-height: 1.3;">
+      „Svejedno mi je“ = poziv bez staffId
+    </div>
+  </div>
+
+</div></div>
+      </figure>
+      <figure class="frame">
+        <figcaption>3 · Datum i termin</figcaption>
+        <div class="stage"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column;">
+
+  <div style="padding: 18px 20px; border-bottom: 2px solid #2b2b2b; display: flex; align-items: center; gap: 12px; min-height: 44px;">
+    <div style="font-size: 14px; color: #78787a; min-height: 44px; display: flex; align-items: center; padding-right: 12px;">&larr; Nazad</div>
+    <div style="flex-grow: 1;"></div>
+    <div style="font-size: 13px; color: #78787a;">Korak 3 od 3</div>
+  </div>
+
+  <div style="margin: 14px 20px 0; border: 1.5px dashed #b8b8b6; background: #ececea; padding: 10px 12px; display: flex; gap: 8px; align-items: baseline;">
+    <div style="font-size: 14px; font-weight: 600;">Šišanje</div>
+    <div style="font-size: 12px; color: #78787a;">45 min &middot; svejedno ko</div>
+  </div>
+
+  <div style="padding: 16px 20px 8px; display: flex; align-items: center; gap: 12px;">
+    <div style="font-size: 18px; font-weight: 700; flex-grow: 1;">septembar 2026</div>
+    <div style="width: 44px; height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">&lsaquo;</div>
+    <div style="width: 44px; height: 44px; border: 1.5px solid #2b2b2b; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">&rsaquo;</div>
+  </div>
+
+  <div style="padding: 0 20px; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px;">
+    <div style="font-size: 11px; color: #78787a; text-align: center; padding: 4px 0;">P</div>
+    <div style="font-size: 11px; color: #78787a; text-align: center; padding: 4px 0;">U</div>
+    <div style="font-size: 11px; color: #78787a; text-align: center; padding: 4px 0;">S</div>
+    <div style="font-size: 11px; color: #78787a; text-align: center; padding: 4px 0;">Č</div>
+    <div style="font-size: 11px; color: #78787a; text-align: center; padding: 4px 0;">P</div>
+    <div style="font-size: 11px; color: #78787a; text-align: center; padding: 4px 0;">S</div>
+    <div style="font-size: 11px; color: #78787a; text-align: center; padding: 4px 0;">N</div>
+
+    <div style="height: 44px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #c8c8c6;">14</div>
+    <div style="height: 44px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #c8c8c6;">15</div>
+    <div style="height: 44px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #c8c8c6;">16</div>
+    <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">17</div>
+    <div style="height: 44px; background: #2b2b2b; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600;">18</div>
+    <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">19</div>
+    <div style="height: 44px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #c8c8c6;">20</div>
+
+    <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">21</div>
+    <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">22</div>
+    <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">23</div>
+    <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">24</div>
+    <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">25</div>
+    <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">26</div>
+    <div style="height: 44px; display: flex; align-items: center; justify-content: center; font-size: 14px; color: #c8c8c6;">27</div>
+  </div>
+
+  <div style="padding: 8px 20px 0; display: flex; gap: 14px; align-items: center;">
+    <div style="display: flex; gap: 6px; align-items: center;">
+      <div style="width: 12px; height: 12px; border: 1.5px solid #b8b8b6; background: #fff;"></div>
+      <div style="font-size: 11px; color: #78787a;">ima termina</div>
+    </div>
+    <div style="display: flex; gap: 6px; align-items: center;">
+      <div style="width: 12px; height: 12px; border: 1.5px solid #ececea; background: #f4f4f2;"></div>
+      <div style="font-size: 11px; color: #78787a;">popunjeno ili zatvoreno</div>
+    </div>
+  </div>
+
+  <div style="padding: 18px 20px 6px; display: flex; align-items: baseline; gap: 8px;">
+    <div style="font-size: 16px; font-weight: 700;">Petak, 18. septembar</div>
+  </div>
+
+  <div style="padding: 4px 20px; display: flex; flex-direction: column; gap: 10px;">
+    <div style="font-size: 11px; color: #78787a;">PRE PODNE</div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px;">
+      <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">09:00</div>
+      <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">09:15</div>
+      <div style="height: 44px; border: 2px solid #2b2b2b; background: #2b2b2b; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600;">10:00</div>
+      <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">11:00</div>
+    </div>
+    <div style="font-size: 11px; color: #78787a; padding-top: 4px;">POSLE PODNE</div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px;">
+      <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">13:00</div>
+      <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">14:30</div>
+      <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">16:00</div>
+      <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">17:15</div>
+    </div>
+  </div>
+
+  <div style="margin: 14px 20px 0; border-left: 3px solid #b8b8b6; padding-left: 12px;">
+    <div style="font-size: 12px; color: #78787a; line-height: 1.5;">
+      Izabrani termin nosi i ko je slobodan. Ako ih je više, bira se ovde ili se uzima prvi.
+    </div>
+  </div>
+
+  <div style="margin-top: auto; padding: 12px 20px 20px; display: flex; flex-direction: column; gap: 5px;">
+    <div style="font-family: Caveat, system-ui, sans-serif; font-size: 17px; color: #6b6b6d; line-height: 1.25;">
+      sivi dani = /api/availability/days, jedan poziv za ceo mesec
+    </div>
+    <div style="font-family: Caveat, system-ui, sans-serif; font-size: 17px; color: #6b6b6d; line-height: 1.25;">
+      termini = /api/availability?date=… — svaki ima staffIds
+    </div>
+  </div>
+
+</div></div>
+      </figure>
+      <figure class="frame">
+        <figcaption>4 · Podaci</figcaption>
+        <div class="stage"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column;">
+
+  <div style="padding: 18px 20px; border-bottom: 2px solid #2b2b2b; display: flex; align-items: center; min-height: 44px;">
+    <div style="font-size: 14px; color: #78787a; min-height: 44px; display: flex; align-items: center; padding-right: 12px;">&larr; Nazad</div>
+  </div>
+
+  <div style="padding: 20px 20px 8px;">
+    <div style="font-size: 22px; font-weight: 700;">Tvoji podaci</div>
+  </div>
+
+  <div style="margin: 8px 20px 0; border: 2px solid #2b2b2b; background: #fff; padding: 14px; display: flex; flex-direction: column; gap: 10px;">
+    <div style="display: flex; gap: 12px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Usluga</div>
+      <div style="font-size: 14px; font-weight: 600;">Šišanje &middot; 45 min</div>
+    </div>
+    <div style="display: flex; gap: 12px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Termin</div>
+      <div style="font-size: 14px; font-weight: 600;">pet, 18. sept. &middot; 10:00–10:45</div>
+    </div>
+    <div style="display: flex; gap: 12px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Berberin</div>
+      <div style="font-size: 14px; font-weight: 600;">Miloš Rakić</div>
+    </div>
+    <div style="display: flex; gap: 12px; border-top: 1.5px solid #ececea; padding-top: 10px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Cena</div>
+      <div style="font-size: 14px; font-weight: 600;">1.500 RSD</div>
+    </div>
+  </div>
+
+  <div style="padding: 20px 20px 0; display: flex; flex-direction: column; gap: 16px;">
+
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <div style="font-size: 13px;">Ime i prezime <span style="color: #78787a;">*</span></div>
+      <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; padding: 0 12px; font-size: 14px; color: #c8c8c6;">Petar Petrović</div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <div style="font-size: 13px;">Email <span style="color: #78787a;">*</span></div>
+      <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; padding: 0 12px; font-size: 14px; color: #c8c8c6;">petar@primer.rs</div>
+      <div style="font-size: 11px; color: #78787a;">Na njega stiže link za otkazivanje.</div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <div style="font-size: 13px;">Napomena <span style="color: #78787a;">— opciono</span></div>
+      <div style="height: 76px; border: 1.5px solid #b8b8b6; background: #fff; padding: 12px; font-size: 14px; color: #c8c8c6;">Fade sa strane, gore duže.</div>
+    </div>
+
+  </div>
+
+  <div style="margin-top: auto; padding: 16px 20px 22px; display: flex; flex-direction: column; gap: 12px;">
+    <div style="height: 52px; background: #2b2b2b; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600;">Zakaži termin</div>
+    <div style="font-family: Caveat, system-ui, sans-serif; font-size: 17px; color: #6b6b6d; line-height: 1.25;">
+      POST /api/bookings — vraća token
+    </div>
+  </div>
+
+</div></div>
+      </figure>
+      <figure class="frame">
+        <figcaption>5 · Potvrda</figcaption>
+        <div class="stage"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column;">
+
+  <div style="padding: 18px 20px; border-bottom: 2px solid #2b2b2b; min-height: 44px; display: flex; align-items: center;">
+    <div style="font-size: 15px; font-weight: 700;">Brica Barbershop</div>
+  </div>
+
+  <div style="padding: 36px 20px 0; display: flex; flex-direction: column; align-items: center; gap: 14px;">
+    <div style="width: 56px; height: 56px; border: 2px solid #2b2b2b; display: flex; align-items: center; justify-content: center;">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2b2b2b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 12.5 9.5 18 20 6.5" />
+      </svg>
+    </div>
+    <div style="font-size: 22px; font-weight: 700; text-align: center;">Termin je zakazan</div>
+    <div style="font-size: 13px; color: #78787a; text-align: center; line-height: 1.5; max-width: 260px;">Potvrda je poslata na petar@primer.rs</div>
+  </div>
+
+  <div style="margin: 26px 20px 0; border: 2px solid #2b2b2b; background: #fff; padding: 16px; display: flex; flex-direction: column; gap: 12px;">
+    <div style="display: flex; gap: 12px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Kada</div>
+      <div style="font-size: 15px; font-weight: 600;">petak, 18. septembar<br>10:00–10:45</div>
+    </div>
+    <div style="display: flex; gap: 12px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Šta</div>
+      <div style="font-size: 14px;">Šišanje</div>
+    </div>
+    <div style="display: flex; gap: 12px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Kod koga</div>
+      <div style="font-size: 14px;">Miloš Rakić</div>
+    </div>
+  </div>
+
+  <div style="margin: 18px 20px 0; border: 1.5px dashed #2b2b2b; background: #ececea; padding: 14px; display: flex; flex-direction: column; gap: 8px;">
+    <div style="font-size: 13px; font-weight: 600;">Sačuvaj ovaj link</div>
+    <div style="font-size: 12px; color: #78787a; line-height: 1.5;">Preko njega kasnije menjaš ili otkazuješ termin. Nema naloga ni lozinke.</div>
+    <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 10px 12px; font-size: 11px; font-family: ui-monospace, monospace; color: #6b6b6d; word-break: break-all;">brica.rs/termin/wJoOs8uhnzRR3kQ</div>
+    <div style="height: 44px; border: 1.5px solid #2b2b2b; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600;">Kopiraj link</div>
+  </div>
+
+  <div style="margin-top: auto; padding: 16px 20px 22px; display: flex; flex-direction: column; gap: 5px;">
+    <div style="font-family: Caveat, system-ui, sans-serif; font-size: 17px; color: #6b6b6d; line-height: 1.25;">
+      token iz odgovora POST-a — jedini put nazad
+    </div>
+    <div style="font-family: Caveat, system-ui, sans-serif; font-size: 17px; color: #6b6b6d; line-height: 1.25;">
+      imena dolaze iz /staff i /services, spojiti
+    </div>
+  </div>
+
+</div></div>
+      </figure>
+      <figure class="frame">
+        <figcaption>6 · Upravljanje terminom</figcaption>
+        <div class="stage"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column;">
+
+  <div style="padding: 18px 20px; border-bottom: 2px solid #2b2b2b; min-height: 44px; display: flex; align-items: center;">
+    <div style="font-size: 15px; font-weight: 700;">Brica Barbershop</div>
+  </div>
+
+  <div style="padding: 22px 20px 0; display: flex; flex-direction: column; gap: 6px;">
+    <div style="font-size: 22px; font-weight: 700;">Tvoj termin</div>
+    <div style="font-size: 13px; color: #78787a;">Zakazano 17. septembra</div>
+  </div>
+
+  <div style="margin: 16px 20px 0; border: 2px solid #2b2b2b; background: #fff; padding: 16px; display: flex; flex-direction: column; gap: 12px;">
+    <div style="display: flex; gap: 12px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Kada</div>
+      <div style="font-size: 15px; font-weight: 600;">petak, 18. septembar<br>10:00–10:45</div>
+    </div>
+    <div style="display: flex; gap: 12px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Šta</div>
+      <div style="font-size: 14px;">Šišanje &middot; 1.500 RSD</div>
+    </div>
+    <div style="display: flex; gap: 12px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Kod koga</div>
+      <div style="font-size: 14px;">Miloš Rakić</div>
+    </div>
+    <div style="display: flex; gap: 12px; border-top: 1.5px solid #ececea; padding-top: 10px;">
+      <div style="width: 84px; font-size: 12px; color: #78787a;">Na ime</div>
+      <div style="font-size: 14px;">Petar Petrović</div>
+    </div>
+  </div>
+
+  <div style="padding: 22px 20px 0; display: flex; flex-direction: column; gap: 12px;">
+    <div style="height: 50px; border: 2px solid #2b2b2b; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 600;">Pomeri termin</div>
+    <div style="height: 50px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 15px; color: #78787a;">Otkaži termin</div>
+  </div>
+
+  <div style="margin: 16px 20px 0; border-left: 3px solid #b8b8b6; padding-left: 12px; display: flex; flex-direction: column; gap: 4px;">
+    <div style="font-size: 12px; color: #78787a; line-height: 1.5;">
+      Otkazivanje je moguće najkasnije 2 sata pre termina. Posle toga su oba dugmeta ugašena.
+    </div>
+  </div>
+
+  <div style="margin: 22px 20px 0; border: 1.5px dashed #b8b8b6; background: #ececea; padding: 14px; display: flex; flex-direction: column; gap: 6px;">
+    <div style="font-size: 12px; color: #78787a;">STANJE: OTKAZANO</div>
+    <div style="font-size: 13px; line-height: 1.5;">Termin je otkazan. Dugmad nestaje, ostaje samo poziv da se zakaže novi.</div>
+  </div>
+
+  <div style="margin-top: auto; padding: 16px 20px 22px; display: flex; flex-direction: column; gap: 5px;">
+    <div style="font-family: Caveat, system-ui, sans-serif; font-size: 17px; color: #6b6b6d; line-height: 1.25;">
+      GET /api/bookings/{token} — 404 ako ne postoji
+    </div>
+    <div style="font-family: Caveat, system-ui, sans-serif; font-size: 17px; color: #6b6b6d; line-height: 1.25;">
+      rok za otkazivanje iz /api/business
+    </div>
+  </div>
+
+</div></div>
+      </figure>
+      <figure class="frame">
+        <figcaption>Stanja</figcaption>
+        <div class="stage"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column; gap: 14px; padding: 20px;">
+
+  <div style="font-size: 20px; font-weight: 700;">Stanja</div>
+
+  <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 14px; display: flex; flex-direction: column; gap: 10px;">
+    <div style="font-size: 11px; color: #78787a;">PRAZAN DAN</div>
+    <div style="font-size: 15px; font-weight: 600;">Nedelja, 20. septembar</div>
+    <div style="border: 1.5px dashed #b8b8b6; background: #f4f4f2; padding: 18px 14px; display: flex; flex-direction: column; gap: 6px; align-items: center;">
+      <div style="font-size: 14px; font-weight: 600;">Nema slobodnih termina</div>
+      <div style="font-size: 12px; color: #78787a; text-align: center; line-height: 1.5;">Nedeljom ne radimo. Probaj ponedeljak.</div>
+    </div>
+    <div style="height: 44px; border: 1.5px solid #2b2b2b; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600;">Prvi slobodan: pon, 21. sept.</div>
+  </div>
+
+  <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 14px; display: flex; flex-direction: column; gap: 10px;">
+    <div style="font-size: 11px; color: #78787a;">UČITAVANJE</div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px;">
+      <div style="height: 44px; background: #ececea;"></div>
+      <div style="height: 44px; background: #ececea;"></div>
+      <div style="height: 44px; background: #ececea;"></div>
+      <div style="height: 44px; background: #ececea;"></div>
+      <div style="height: 44px; background: #ececea;"></div>
+      <div style="height: 44px; background: #ececea;"></div>
+      <div style="height: 44px; background: #ececea;"></div>
+      <div style="height: 44px; background: #ececea;"></div>
+    </div>
+    <div style="font-size: 12px; color: #78787a; line-height: 1.5;">Kostur zadržava visinu mreže, da sadržaj ne poskoči kad stigne.</div>
+  </div>
+
+  <div style="border: 2px solid #2b2b2b; background: #fff; padding: 14px; display: flex; flex-direction: column; gap: 10px;">
+    <div style="font-size: 11px; color: #78787a;">TERMIN ZAUZET &mdash; 409</div>
+    <div style="display: flex; gap: 10px; align-items: flex-start;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round" style="flex-shrink: 0; margin-top: 2px;">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M12 7.5v5.5M12 16.4v.1" />
+      </svg>
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <div style="font-size: 14px; font-weight: 600;">Neko je upravo uzeo 10:00</div>
+        <div style="font-size: 12px; color: #78787a; line-height: 1.5;">Termini su osveženi. Izaberi drugi.</div>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px;">
+      <div style="height: 44px; background: #ececea; color: #c8c8c6; display: flex; align-items: center; justify-content: center; font-size: 14px; text-decoration: line-through;">10:00</div>
+      <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">10:15</div>
+      <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">11:00</div>
+      <div style="height: 44px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">11:15</div>
+    </div>
+  </div>
+
+  <div style="margin-top: auto; display: flex; flex-direction: column; gap: 5px;">
+    <div style="font-family: Caveat, system-ui, sans-serif; font-size: 17px; color: #6b6b6d; line-height: 1.25;">
+      409 stiže i kad optimistički upis treba povući nazad
+    </div>
+  </div>
+
+</div></div>
+      </figure>
+      </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "pages": [
+    { "id": "page-1", "name": "Desktop" },
+    { "id": "page-2", "name": "Telefon" }
+  ],
+  "artboards": [
+    { "file": "Main.dc.html", "page": "page-1", "x": 0, "y": 0, "w": 1120, "h": 760, "title": "1 · Izbor usluge" },
+    { "file": "Barber.dc.html", "page": "page-1", "x": 1220, "y": 0, "w": 1120, "h": 760, "title": "2 · Izbor berberina" },
+    { "file": "Calendar.dc.html", "page": "page-1", "x": 2440, "y": 0, "w": 1120, "h": 760, "title": "3 · Datum i termin" },
+    { "file": "Form.dc.html", "page": "page-1", "x": 0, "y": 920, "w": 1120, "h": 760, "title": "4 · Podaci" },
+    { "file": "Confirmation.dc.html", "page": "page-1", "x": 1220, "y": 920, "w": 1120, "h": 760, "title": "5 · Potvrda" },
+    { "file": "Manage.dc.html", "page": "page-1", "x": 2440, "y": 920, "w": 1120, "h": 760, "title": "6 · Upravljanje terminom" },
+    { "file": "States.dc.html", "page": "page-1", "x": 0, "y": 1840, "w": 1120, "h": 760, "title": "Stanja" },
+
+    { "file": "PhoneMain.dc.html", "page": "page-2", "x": 0, "y": 0, "w": 390, "h": 844, "title": "1 · Izbor usluge" },
+    { "file": "PhoneBarber.dc.html", "page": "page-2", "x": 490, "y": 0, "w": 390, "h": 844, "title": "2 · Izbor berberina" },
+    { "file": "PhoneCalendar.dc.html", "page": "page-2", "x": 980, "y": 0, "w": 390, "h": 844, "title": "3 · Datum i termin" },
+    { "file": "PhoneForm.dc.html", "page": "page-2", "x": 1470, "y": 0, "w": 390, "h": 844, "title": "4 · Podaci" },
+    { "file": "PhoneConfirmation.dc.html", "page": "page-2", "x": 0, "y": 1000, "w": 390, "h": 844, "title": "5 · Potvrda" },
+    { "file": "PhoneManage.dc.html", "page": "page-2", "x": 490, "y": 1000, "w": 390, "h": 844, "title": "6 · Upravljanje terminom" },
+    { "file": "PhoneStates.dc.html", "page": "page-2", "x": 980, "y": 1000, "w": 390, "h": 844, "title": "Stanja" }
+  ],
+  "annotations": [
+    { "id": "flow-note", "page": "page-1", "x": 0, "y": -170, "w": 900, "text": "Tok: usluga → berberin → datum i termin → podaci → potvrda.\nSive kutije su namerne — raspored i hijerarhija su odluka, izgled nije." },
+    { "id": "states-note", "page": "page-1", "x": 1220, "y": 1840, "w": 340, "text": "Stanja levo su ono što se najčešće zaboravi,\na korisnik ih vidi svakog dana." },
+    { "id": "phone-note", "page": "page-2", "x": 0, "y": -150, "w": 700, "text": "Ista hijerarhija, skupljena na 390px.\nKalendar i termini prelaze jedno ispod drugog." }
+  ],
+  "launch": { "view": "canvas", "page": "page-1" }
+}

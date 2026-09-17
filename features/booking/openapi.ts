@@ -40,11 +40,25 @@ export function buildOpenApiDocument() {
     },
     servers: [{ url: "/api" }],
     tags: [
+      { name: "Service", description: "Is the API up, and is there data in it." },
       { name: "Catalogue", description: "What can be booked, and by whom." },
       { name: "Availability", description: "Free slots and free days." },
       { name: "Bookings", description: "Creating and changing a booking." },
     ],
     paths: {
+      "/health": {
+        get: {
+          tags: ["Service"],
+          summary: "Health check",
+          description:
+            "Confirms the API is running and the database answers. `seeded` " +
+            "is false on a fresh clone until `bun run db:seed` has been run.",
+          responses: {
+            "200": { description: "OK", ...json("Health") },
+            ...errors([503, "The database could not be reached."]),
+          },
+        },
+      },
       "/business": {
         get: {
           tags: ["Catalogue"],
@@ -196,6 +210,7 @@ export function buildOpenApiDocument() {
     },
     components: {
       schemas: {
+        Health: schema(s.healthResponse),
         Business: schema(s.businessResponse),
         Service: schema(s.serviceResponse),
         StaffMember: schema(s.staffResponse),

@@ -1,23 +1,22 @@
 # What you build and what you get
 
 This repository is not an empty project. Part of the work is already done, and
-that part is **off limits** — the same way you would not rewrite another
-team's service because its response shape does not suit you.
+that part is **off limits** on purpose — it simulates what you would get from backend or other teams.
 
 ## Already here
 
-| | Where |
-|---|---|
-| Database, migrations and seed data | `lib/db/` |
-| The API the app consumes | `app/api/` |
-| Slot computation | `features/booking/server/` |
-| Server-side timezone maths | `lib/time.ts` |
-| API documentation | `/docs` in the running app |
-| CI, PR template, definition of done | `.github/` |
+|                                     | Where                      |
+| ----------------------------------- | -------------------------- |
+| Database, migrations and seed data  | `lib/db/`                  |
+| The API the app consumes            | `app/api/`                 |
+| Slot computation                    | `features/booking/server/` |
+| Server-side timezone maths          | `lib/time.ts`              |
+| API documentation                   | `/docs` in the running app |
+| CI, PR template, definition of done | `.github/`                 |
 
 Treat everything in that table as somebody else's service: read it, rely on
 it, do not change it. If something in it gets in your way or looks wrong —
-**say so.** That is part of the work, not a way around the rules.
+**reach out. It is encouraged to reach out and ask questions** That is an important part of the work
 
 ## Yours to build
 

@@ -10,7 +10,7 @@ const page = `<!doctype html>
     <title>Timey API</title>
   </head>
   <body>
-    <script id="api-reference" data-url="/api/openapi.json"></script>
+    <script id="api-reference" data-url="/api/openapi"></script>
     <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
   </body>
 </html>`;

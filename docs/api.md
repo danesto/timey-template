@@ -3,7 +3,7 @@
 The reference is generated from the code and served by the running app:
 
 - **[`/docs`](http://localhost:3000/docs)** — browsable, with request examples
-- **`/api/openapi.json`** — the OpenAPI 3.0 document itself
+- **`/api/openapi`** — the OpenAPI 3.0 document itself
 
 Both come from the same Zod schemas the endpoints validate against, so they
 cannot drift from the implementation.
@@ -12,6 +12,7 @@ cannot drift from the implementation.
 
 | | |
 |---|---|
+| `GET /api/health` | is the API up, and has the seed been run |
 | `GET /api/business` | timezone, slot grid, cancellation window |
 | `GET /api/services` | what can be booked, with duration and price |
 | `GET /api/staff` | the barbers, and which services each one takes |
@@ -21,6 +22,10 @@ cannot drift from the implementation.
 | `GET /api/bookings/{token}` | read one booking |
 | `PATCH /api/bookings/{token}` | move it |
 | `DELETE /api/bookings/{token}` | cancel it |
+
+Start with `GET /api/health` on a fresh clone: it answers `seeded: false`
+until `bun run db:seed` has been run, which is the usual reason an otherwise
+correct screen comes up empty.
 
 ## Rules the schema cannot express
 

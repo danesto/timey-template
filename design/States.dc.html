@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: #2b2b2b; } a:hover { color: #000; }
+  </style>
+</helmet>
+<div style="width: 1120px; height: 760px; background: #f4f4f2; font-family: system-ui, sans-serif; color: #2b2b2b; display: flex; flex-direction: column; padding: 32px;">
+
+  <div style="font-size: 24px; font-weight: 700; margin-bottom: 20px;">Stanja</div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; flex-grow: 1;">
+
+    <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 18px; display: flex; flex-direction: column; gap: 14px;">
+      <div style="font-size: 11px; color: #78787a;">PRAZAN DAN</div>
+      <div style="font-size: 16px; font-weight: 600;">nedelja, 20. septembar</div>
+      <div style="border: 1.5px dashed #b8b8b6; background: #f4f4f2; padding: 26px 18px; display: flex; flex-direction: column; gap: 8px; align-items: center;">
+        <div style="font-size: 15px; font-weight: 600;">Nema slobodnih termina</div>
+        <div style="font-size: 12px; color: #78787a; text-align: center; line-height: 1.5;">Nedeljom ne radimo.</div>
+      </div>
+      <div style="height: 46px; border: 1.5px solid #2b2b2b; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600;">Prvi slobodan: pon, 21. sept.</div>
+      <div style="font-size: 12px; color: #78787a; line-height: 1.5;">Prazan dan nije greška — ponudi izlaz umesto praznine.</div>
+    </div>
+
+    <div style="border: 1.5px solid #b8b8b6; background: #fff; padding: 18px; display: flex; flex-direction: column; gap: 14px;">
+      <div style="font-size: 11px; color: #78787a;">UČITAVANJE</div>
+      <div style="height: 22px; width: 60%; background: #ececea;"></div>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;">
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+        <div style="height: 46px; background: #ececea;"></div>
+      </div>
+      <div style="font-size: 12px; color: #78787a; line-height: 1.5;">Kostur zadržava visinu mreže, da sadržaj ne poskoči kad stigne.</div>
+    </div>
+
+    <div style="border: 2px solid #2b2b2b; background: #fff; padding: 18px; display: flex; flex-direction: column; gap: 14px;">
+      <div style="font-size: 11px; color: #78787a;">TERMIN ZAUZET &mdash; 409</div>
+      <div style="display: flex; gap: 12px; align-items: flex-start;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round" style="flex-shrink: 0; margin-top: 2px;">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 7.5v5.5M12 16.4v.1" />
+        </svg>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <div style="font-size: 15px; font-weight: 600;">Neko je upravo uzeo 10:00</div>
+          <div style="font-size: 12px; color: #78787a; line-height: 1.5;">Termini su osveženi. Izaberi drugi.</div>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px;">
+        <div style="height: 46px; background: #ececea; color: #c8c8c6; display: flex; align-items: center; justify-content: center; font-size: 14px; text-decoration: line-through;">10:00</div>
+        <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">10:15</div>
+        <div style="height: 46px; border: 1.5px solid #b8b8b6; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px;">11:00</div>
+      </div>
+      <div style="font-size: 12px; color: #78787a; line-height: 1.5;">Isti odgovor stiže i kad optimistički upis treba povući nazad.</div>
+    </div>
+
+  </div>
+
+  <div style="margin-top: 20px; font-family: Caveat, system-ui, sans-serif; font-size: 18px; color: #6b6b6d; line-height: 1.25;">
+    ova tri stanja se najčešće zaborave, a vide se svakog dana
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

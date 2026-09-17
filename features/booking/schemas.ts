@@ -95,3 +95,16 @@ export const errorResponse = z.object({
   message: z.string(),
 });
 
+export const healthResponse = z.object({
+  status: z.literal("ok"),
+  database: z.literal("connected"),
+  seeded: z.boolean(),
+  hint: z.string().optional(),
+  counts: z.object({
+    services: z.int(),
+    staff: z.int(),
+    bookings: z.int(),
+  }),
+  serverTime: z.string(),
+});
+
